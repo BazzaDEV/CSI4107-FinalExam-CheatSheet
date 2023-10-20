@@ -1,4 +1,4 @@
-\documentclass[10pt,landscape,a4paper]{article}
+\documentclass[12pt,landscape,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
@@ -11,27 +11,24 @@
 \usepackage[t1]{sourcesanspro}
 \usepackage{multicol}
 \usepackage{wrapfig}
-\usepackage[top=0mm,bottom=1mm,left=0mm,right=1mm]{geometry}
+\usepackage[top=5mm,bottom=5mm,left=5mm,right=5mm]{geometry}
 \usepackage[framemethod=tikz]{mdframed}
 \usepackage{microtype}
 \usepackage{pdfpages}
 
 \let\bar\overline
 
-\include{inhalt/def}
+\setlength{\parindent}{0pt}
 
 \begin{document}
-%\footnotesize
 \small
-\begin{multicols*}{5}
-\input{inhalt/aussagen}
-\input{inhalt/mengen}
-\input{inhalt/relationen}
-\input{inhalt/abbildungen}
-%\input{inhalt/beweise} 
-\input{inhalt/graphen}
-%\input{inhalt/graphalgo}
-%\input{inhalt/bool}
-%\input{inhalt/formeln}
+\begin{multicols*}{3}
+\begin{flushleft}
+
+f$_{ij} =$ freq. of term $i$ in document $j$ \\[10pt]
+tf$_{ij} =$ norm. freq. of term $i$ in doc $j$ $= \frac {\text{f}_{ij}} {\max_i\{\text{f}_{ij}\}}$ \\[10pt]
+df$_{i,j}$
+
+\end{flushleft}
 \end{multicols*}
 \end{document}
